@@ -15,12 +15,6 @@ const DefaultFooter = () => {
                 </div>
                 <div className="contact-info d-flex-all">
                     <div className="images d-flex-all justify-content-start">
-                        <figure>
-                            <img src="/img/blog-author-img.jpg" alt="Contact Images" />
-                        </figure>
-                        <figure>
-                            <img src="/img/blog-author-img-2.jpg" alt="Contact Images" />
-                        </figure>
                     </div>
                     <p>Give us a call  <span>+(502) 2215-7376</span></p>
                 </div>
@@ -34,12 +28,6 @@ const DefaultFooter = () => {
         <div className="footer-p-2">
         <div className="container">
             <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="footer-col">
-                    <h3>Information</h3>
-                    <p>We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly master new technologies.</p>
-                </div>
-            </div>
             <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="footer-col">
                     <h3>Contact</h3>

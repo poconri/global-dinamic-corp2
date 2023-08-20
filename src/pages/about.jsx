@@ -19,7 +19,7 @@ const About = () => {
       <section className="gap about-first">
         <div className="container">
           <div className="row">
-            <h2>Construction industry representing the interests of small and medium-sized building companies</h2>
+            <h2>Global Dynamic Corp</h2>
           </div>
         </div>
         <div className="container">
@@ -28,27 +28,31 @@ const About = () => {
               <div className="who-we-are">
                 <div>
                   <h3>Who We Are?</h3>
-                  <p>We are resolute in our mission to not only make a difference to the lives of people today but to also leave a legacy for future generations and the planet we live in. Our portfolio includes dozens of successfully completed projects of houses of different storeys, with high–quality finishes and good repairs. Building houses is our vocation!</p>
+                  <p>Global Dynamic Corp is a company dedicated to the importation, marketing, and distribution of spare parts, lubricants, and consumables for cars and heavy machinery. Our goal is to provide high-quality products and exceptional service to customers worldwide. With an extensive network of suppliers and a solid marketing strategy, we aim to become industry leaders, meeting our customers' needs and generating sustainable and profitable growth for our shareholders.
+                  Additionally, we will offer exceptional customer service, providing technical advice and customized solutions to meet our customers' specific needs.
+                  </p>
                 </div>
                 <figure>
-                  <img className="w-100" src="/img/gallery-1.jpeg" alt="About Image One" />
+                  <h3>Mision</h3>
+                  <p>To provide high-quality spare parts, lubricants, and consumables for cars and heavy machinery, ensuring customer satisfaction through exceptional service and global distribution.</p>
                 </figure>
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="who-we-are space">
                 <div>
-                  <h3>What's in it for me?</h3>
+                  <h3>Our Values</h3>
                   <ul>
-                    <li><i className="fa-solid fa-circle-dot" /> High performing, low carbon concrete solution</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Value for workers' skills</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Excellent standards in construction</li>
-                    <li><i className="fa-solid fa-circle-dot" /> An inclusive industry</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Don't take our word for it</li>
+                    <li><i className="fa-solid fa-circle-dot" /> Integrity: We conduct our business with honesty, transparency, and ethical principles.</li>
+                    <li><i className="fa-solid fa-circle-dot" /> Excellence: We strive for excellence in all aspects of our operations to deliver top-notch products and services.</li>
+                    <li><i className="fa-solid fa-circle-dot" /> Customer-Centric: We prioritize our customers' needs, providing personalized solutions and exceptional support</li>
+                    <li><i className="fa-solid fa-circle-dot" /> Innovation: We embrace innovation and continuous improvement to stay ahead in a dynamic industry.</li>
+                    <li><i className="fa-solid fa-circle-dot" /> Collaboration: We foster a collaborative and diverse work environment, valuing each team member's contributions.</li>
                   </ul>
                 </div>
                 <figure>
-                  <img className="w-100" src="/img/gallery-3.jpeg" alt="About Image Two" />
+                  <h3>Vision</h3>
+                  <p>To be a leading global company in the automotive and heavy machinery spare parts industry, recognized for our commitment to quality, innovation, and customer-centric approach.</p>
                 </figure>
               </div>
             </div>
@@ -57,10 +61,10 @@ const About = () => {
       </section>
       {/* About-First End */}
 
-      <CountersSection />
+      {/* <CountersSection /> */}
 
       {/*About How It Works Start */}
-      <section className="gap about-how-it-works light-bg-color">
+      {/* <section className="gap about-how-it-works light-bg-color">
         <div className="heading">
           <figure>
             <img src="/images/heading-icon.png" alt="Heading Icon" />
@@ -113,11 +117,11 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
-      {/*About How It Works End */}
+      </section> */}
+      {/* About How It Works End */}
 
       {/*About Key Benefits Start */}
-      <section className="gap about-key-benefits">
+      {/* <section className="gap about-key-benefits">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6" >
@@ -152,16 +156,16 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*About Key Benefits End */}
 
-      <TeamSlider noTop />
+      {/* <TeamSlider noTop /> */}
 
-      <RenovationSection />
+      {/* <RenovationSection /> */}
 
       <TestimonialSlider />
 
-      <PartnersSlider noTop />
+      {/* <PartnersSlider noTop /> */}
       
     </Layouts>
   );
