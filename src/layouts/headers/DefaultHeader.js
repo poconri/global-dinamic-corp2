@@ -79,7 +79,12 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
                     <div className="header-logo">
                       <Link href="/">
                         <figure>
-                          <img src={appData.header.logo.image} alt={appData.header.logo.alt} />
+                          {/* <img src={appData.header.logo.image} alt={appData.header.logo.alt} /> */}
+                          <span
+                            style={{
+                              color: 'white'
+                            }}
+                          >Global Dinamic Corp</span>
                         </figure>
                       </Link>
                     </div>
