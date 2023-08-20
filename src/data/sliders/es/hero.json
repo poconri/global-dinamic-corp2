@@ -1,0 +1,31 @@
+{
+    "items": [
+        {
+            "image": "img/image_7.jpg",
+            "title": "Global Dynamic Corp",
+            "text": "Repuestos, lubricantes y consumibles para carros y maquinaria pesada.",
+            "button": {
+                "label": "Contáctanos",
+                "link": "/contact"
+            }
+        },
+        {
+            "image": "img/image_9.jpg",
+            "title": "¡Bienvenidos a Global Dynamic Corp!",
+            "text": "Tu destino confiable para repuestos, consumibles y lubricantes de calidad para automóviles y maquinaria pesada.",
+            "button": {
+                "label": "Contáctanos",
+                "link": "/contact"
+            }
+        },
+        {
+            "image": "img/image_10.jpg",
+            "title": "¿Por qué Global Dynamic Corp?",
+            "text": "Aquí, encontrarás todo lo que necesitas para mantener tus vehículos y equipos en funcionamiento óptimo. Nuestros productos están diseñados para brindar rendimiento, confiabilidad y durabilidad en cada aplicación. Explora nuestra amplia selección y descubre cómo estamos comprometidos en mantener tus activos en movimiento.",
+            "button": {
+                "label": "Contáctanos",
+                "link": "/contact"
+            }
+        }
+    ]
+}

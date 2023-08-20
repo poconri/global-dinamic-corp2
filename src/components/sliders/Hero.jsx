@@ -1,10 +1,14 @@
 import { sliderProps } from "@common/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {useLanguage} from '../../stores/use-languaje';
 
-import Data from '@data/sliders/hero';
+import DataEs from '@data/sliders/es/hero';
+import DataEn from '@data/sliders/en/hero';
 import Link from "next/link";
 
 const HeroSlider = () => {
+    const {isSpanish} = useLanguage()
+
   return (
     <section className="featured-slider-one" style={{"background": "grey", "minHeight": "100vh"}}>
         <div className="containe">
@@ -12,7 +16,7 @@ const HeroSlider = () => {
               {...sliderProps.heroSlider}
               className="swiper-container ro f-slider-one"
             >
-                {Data.items.map((item, key) => (
+                {(isSpanish ? DataEs : DataEn).items.map((item, key) => (
                 <SwiperSlide key={`hs-slide-${key}`} className="swiper-slide">
                     <div className="f-slider-layer">
                         <img src={item.image} alt={item.title} />

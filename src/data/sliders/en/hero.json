@@ -1,0 +1,31 @@
+{
+    "items": [
+        {
+            "image": "img/image_7.jpg",
+            "title": "Global Dynamic Corp",
+            "text": "Spare parts, lubricants, and consumables for cars and heavy machinery",
+            "button": {
+                "label": "Contact Us",
+                "link": "/contact"
+            }
+        },
+        {
+            "image": "img/image_9.jpg",
+            "title": "Welcome to Global Dynamic Corp!",
+            "text": "Your trusted destination for quality car and heavy machinery parts, consumables, and lubricants. Here, you'll find everything you need to keep your vehicles and equipment running at their best.",
+            "button": {
+                "label": "Contact Us",
+                "link": "/contact"
+            }
+        },
+        {
+            "image": "img/image_10.jpg",
+            "title": "Why Global Dynamic Corp?",
+            "text": "Our products are designed to deliver performance, reliability, and durability in every application. Explore our extensive selection and discover how we're dedicated to keeping your assets in motion.",
+            "button": {
+                "label": "Contact Us",
+                "link": "/contact"
+            }
+        }
+    ]
+}
