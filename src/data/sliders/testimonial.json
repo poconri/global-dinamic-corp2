@@ -1,30 +1,15 @@
 {
-    "subtitle": "Testimonials",
-    "title":  "Client’s Reviews",
+    "subtitle": "",
+    "title":  "Our team",
     "image": {
         "url": "/img/clients-images.png",
         "alt": "Client Images"
     },
     "items": [
         {
-            "name": "Marko Marlee",
-            "role": "Chairman, Building Corp",
-            "text": "To my mind, the greatest reward for any renovation project is being able to experience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood and heightened productivity."
-        },
-        {
-            "name": "Christopher",
-            "role": "Social Worker",
-            "text": "To my mind, the greatest reward for any renovation project is being able to experience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood and heightened productivity."
-        },
-        {
-            "name": "Donald Paul",
-            "role": "Constructor",
-            "text": "To my mind, the greatest reward for any renovation project is being able to experience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood and heightened productivity."
-        },
-        {
-            "name": "Kevin Samuel",
-            "role": "Creative Head",
-            "text": "To my mind, the greatest reward for any renovation project is being able to experience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood and heightened productivity."
+            "name": "Pablo Andres Recinos",
+            "role": "CEO",
+            "text": "Global Dynamic Corp will be comprised of a highly skilled team in areas such as logistics, sales, customer service, and administration. Our personnel is our most valuable asset, and we foster a collaborative, inclusive, and results-oriented work environment."
         }
     ]
 }

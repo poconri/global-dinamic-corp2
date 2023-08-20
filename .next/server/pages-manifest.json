@@ -2,6 +2,14 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< 742bcf003aee4f95cf19679713ee1ea8cddf91d2
+<<<<<<< 742bcf003aee4f95cf19679713ee1ea8cddf91d2
   "/": "pages/index.js",
   "/services": "pages/services.js"
+=======
+  "/": "pages/index.js"
+>>>>>>> Edit footer
+=======
+  "/about": "pages/about.js"
+>>>>>>> This commit will update the about page and footer
 }
