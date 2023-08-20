@@ -153,7 +153,11 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
+<<<<<<< 742bcf003aee4f95cf19679713ee1ea8cddf91d2
 /******/ 		__webpack_require__.h = function() { return "b47fa301f09c9acd"; }
+=======
+/******/ 		__webpack_require__.h = function() { return "338ea8ea76c43c41"; }
+>>>>>>> Edit footer
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
