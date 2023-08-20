@@ -1,7 +1,6 @@
 import { sliderProps } from "@common/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {useLanguage} from '../../stores/use-languaje';
-
 import DataEs from '@data/sliders/es/hero';
 import DataEn from '@data/sliders/en/hero';
 import Link from "next/link";

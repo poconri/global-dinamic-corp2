@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import appData from "@data/app.json";
+import { useState } from "react";
+import appDataEs from "@data/appEs.json";
+import appDataEn from "@data/appEn.json";
 import { useLocalStorage } from "@common/useLocalStorage";
 import { useLanguage } from "@/src/stores/use-languaje";
 
@@ -9,9 +10,11 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 		({ isSpanish, setLanguage }) => ({ isSpanish, setLanguage })
 	);
 
+  const appDataLanguage = isSpanish ? appDataEs : appDataEn;
+
 	const navItems = [];
 
-	appData.header.menu.forEach((item, index) => {
+	appDataLanguage.header.menu.forEach((item) => {
 		let s_class1 = "";
 
 		if (item.children != 0) {
@@ -59,18 +62,6 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 			lightmodeToggle.src = "/images/moon.png";
 		}
 	};
-
-	// useEffect(() => {
-	// 	const lightmodeToggle = document.querySelector("#theme-icon");
-
-	// 	if (themeUI) {
-	// 		document.body.classList.add("light-d");
-	// 		lightmodeToggle.src = "/images/moon.png";
-	// 	} else {
-	// 		document.body.classList.remove("light-d");
-	// 		lightmodeToggle.src = "/images/sun.png";
-	// 	}
-	// }, []);
 
 	return (
 		<header className="header-style-one">
@@ -328,8 +319,8 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 						<div className="res-log">
 							<Link href="/">
 								<img
-									src={appData.header.logo.image}
-									alt={appData.header.logo.alt}
+									src={appDataLanguage.header.logo.image}
+									alt={appDataLanguage.header.logo.alt}
 								/>
 							</Link>
 						</div>
@@ -403,7 +394,7 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 						</p>
 
 						<div className="social-medias">
-							{appData.social.map((item, key) => (
+							{appDataLanguage.social.map((item, key) => (
 								<a href={item.link} target="_blank" key={`hsocial-item-${key}`}>
 									{item.title}
 								</a>

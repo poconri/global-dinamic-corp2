@@ -1,8 +1,12 @@
 import Data from "@data/sections/contact-form-2.json";
-import appData from "@data/app.json";
+import { useLanguage } from "@/src/stores/use-languaje";
+import appDataEs from "@data/appEs.json";
+import appDataEn from "@data/appEn.json";
 import { Formik } from 'formik';
 
 const ContactForm2Section = () => {
+    const {isSpanish} = useLanguage();
+
   return (
     <div className="contact-form-one contact-form-two">
         <div className="parallax" style={{backgroundImage: 'url('+Data.bg_image+')'}} />
@@ -75,7 +79,7 @@ const ContactForm2Section = () => {
                         isSubmitting,
                         /* and other goodies */
                     }) => (
-                    <form onSubmit={handleSubmit} id="contactForm" action={appData.settings.formspreeURL}>
+                    <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish? appDataEs :appDataEn).settings.formspreeURL}>
                         <div className="row g-0">
                             <input 
                               type="text" 

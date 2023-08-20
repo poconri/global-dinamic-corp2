@@ -1,9 +1,12 @@
 import Data from "@data/sections/contact-form.json";
 import Accordion from 'react-bootstrap/Accordion';
-import appData from "@data/app.json";
+import appDataEs from "@data/appEs.json";
+import appDataEn from "@data/appEn.json";
 import { Formik } from 'formik';
 
 const ContactFormSection = () => {
+    const {isSpanish} = useLanguage();
+
   const styles = {
     parallax: {
         "backgroundImage": "url(/images/pattren.png)"
@@ -101,7 +104,7 @@ const ContactFormSection = () => {
                         isSubmitting,
                         /* and other goodies */
                     }) => (
-                    <form onSubmit={handleSubmit} id="contactForm" action={appData.settings.formspreeURL}>
+                    <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish? appDataEs: appDataEn).settings.formspreeURL}>
                         <div className="row g-0">
                             <input 
                               type="text" 

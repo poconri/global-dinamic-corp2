@@ -1,14 +1,18 @@
 import Head from 'next/head';
 import Link from "next/link";
-import appData from "@data/app.json";
+import { useLanguage } from '../stores/use-languaje';
+import appDataEs from "@data/appEs.json";
+import appDataEn from "@data/appEn.json";
 
 const PageBanner = ({ pageTitle, pageDesc }) => {
+  const {isSpanish} = useLanguage();
+
   const styles = {
     "parallax": {
       "backgroundImage": "url(/images/pattren-3.png)"
     }
   }
-  const headTitle = `${appData.settings.siteName} - ${pageTitle}`;
+  const headTitle = `${(isSpanish? appDataEs: appDataEn).settings.siteName} - ${pageTitle}`;
 
   return (
     <>

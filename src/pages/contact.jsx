@@ -1,10 +1,14 @@
 import PageBanner from "@components/PageBanner";
 import Layouts from "@layouts/Layouts";
 import Accordion from 'react-bootstrap/Accordion';
-import appData from "@data/app.json";
+import appDataEs from "@data/appEs.json";
+import appDataEn from "@data/appEn.json";
+import { useLanguage } from "../stores/use-languaje";
 import { Formik } from 'formik';
 
 const Contact = () => {
+    const {isSpanish} = useLanguage();
+
   const faqData = {
     "items": [
         {
@@ -102,7 +106,7 @@ const Contact = () => {
                             isSubmitting,
                             /* and other goodies */
                         }) => (
-                        <form onSubmit={handleSubmit} id="contactForm" action={appData.settings.formspreeURL}>
+                        <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish ? appDataEs : appDataEn).settings.formspreeURL}>
                             <div className="row g-0">
                                 <textarea 
                                   name="message" 

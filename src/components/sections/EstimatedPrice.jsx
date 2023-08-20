@@ -2,9 +2,13 @@ import Data from "@data/sections/estimated-price.json";
 import { useEffect } from "react";
 import { estimatedFormSteps } from "@common/utilits";
 import { Formik, Field } from 'formik';
-import appData from "@data/app.json";
+import { useLanguage } from "@/src/stores/use-languaje";
+import appDataEs from "@data/appEs.json";
+import appDataEn from "@data/appEn.json";
 
 const EstimatedPriceSection = () => {
+    const {isSpanish} = useLanguage();
+
   useEffect(() => {
     estimatedFormSteps();
   }, []);
@@ -91,7 +95,7 @@ const EstimatedPriceSection = () => {
                         isSubmitting,
                         /* and other goodies */
                     }) => (
-                    <form onSubmit={handleSubmit} id="contactForm" action={appData.settings.formspreeURL}>
+                    <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish ? appDataEs : appDataEn).settings.formspreeURL}>
 
                         <div className="est-form-step-1">
                         <div className="row">
