@@ -18,7 +18,7 @@
         },
         "menu": [
             {
-                "label": "Home",
+                "label": "Inicio",
                 "link": "/",
                 "children": []
             },
@@ -80,5 +80,13 @@
             "link": "https://linkedin.com",
             "title": "Linkedin"
         }
-    ]
+    ],
+    "sidebarMenu": {
+        "subTitle": "¡Bienvenidos a Global Dynamic Corp!",
+        "description": "Tu destino confiable para repuestos, consumibles y lubricantes de calidad para automóviles y maquinaria pesada.",
+        "image": "/img/project1.jpeg",
+        "getInTouch": "Contactanos!",
+        "phoneNumber": "+502 5595-7883",
+        "address": "23 calle 14-58 zona 4 de Mixco, Condado Naranjo, Pent-House Edificio Crece Torre 1, Oficina 1104 (GT)"
+    }
 }

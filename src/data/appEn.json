@@ -80,5 +80,13 @@
             "link": "https://linkedin.com",
             "title": "Linkedin"
         }
-    ]
+    ],
+    "sidebarMenu": {
+        "subTitle": "Welcome to Global Dynamic Corp!",
+        "description": "Your trusted destination for quality car and heavy machinery parts, consumables, and lubricants. Here, you'll find everything you need to keep your vehicles and equipment running at their best.",
+        "getInTouch": "get in touch",
+        "image": "/img/project1.jpeg",
+        "phoneNumber": "+502 5595-7883",
+        "address": "23 calle 14-58 zona 4 de Mixco, Condado Naranjo, Pent-House Edificio Crece Torre 1, Oficina 1104 (GT)"
+    }
 }

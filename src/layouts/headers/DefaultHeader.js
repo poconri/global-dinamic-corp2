@@ -377,20 +377,19 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 					</div>
 
 					<div className="mobile-nav desktop-menu">
-						<h2>We Build Building and Great Homes.</h2>
+						<h2>{appDataLanguage.sidebarMenu.subTitle}</h2>
 						<p className="des">
-							We successfully cope with tasks of varying complexity, provide
-							long-term guarantees and regularly master new technologies.
+							{appDataLanguage.sidebarMenu.description}
 						</p>
 
 						<figure>
-							<img src="/img/project1.jpeg" alt="image" />
+							<img src={appDataLanguage.sidebarMenu.image} alt="image" />
 						</figure>
 
-						<h3>Get in touch</h3>
-						<p className="num">(+380) 50 318 47 07</p>
+						<h3>{appDataLanguage.sidebarMenu.getInTouch}</h3>
+						<p className="num">{appDataLanguage.sidebarMenu.phoneNumber}</p>
 						<p className="adrs">
-							65 Allerton Street 901 N Pitt Str, Suite 170, VA 22314, USA
+							{appDataLanguage.sidebarMenu.address}
 						</p>
 
 						<div className="social-medias">
