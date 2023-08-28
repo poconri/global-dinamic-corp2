@@ -2,7 +2,7 @@
     "settings": {
         "siteName": "Global Dynamic Corp",
         "preloader": {
-            "image": "/img/Builty-Logo-Black-Home.svg",
+            "image": "/img/2.-Global-Dynamic-Corp-Logo-Background.svg",
             "alt": "logo"
         },
         "formspreeURL": "https://formspree.io/f/your_api_key",
@@ -13,7 +13,7 @@
     },
     "header": {
         "logo": {
-            "image": "/img/Builty-Logo.svg",
+            "image": "/img/2.-Global-Dynamic-Corp-Logo-Background.svg",
             "alt": "logo"
         },
         "menu": [
@@ -57,7 +57,7 @@
     },
     "footer": {
         "logo": {
-            "image": "/img/Builty-Logo.svg",
+            "image": "/img/2.-Global-Dynamic-Corp-Logo-Background.svg",
             "alt": "logo"
         },
         "info": {
