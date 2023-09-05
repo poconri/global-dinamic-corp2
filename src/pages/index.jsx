@@ -24,15 +24,15 @@ const Home1 = (props) => {
       <>
         <HeroSlider />
         <ServicesSection />
-        <AboutSection />
-        <CountersSection />
-        <ProjectsSlider projects={props.projects} />
-        <TeamSlider />
-        <FeaturesSection />
-        <PartnersSlider />
-        <RenovationSection />
-        <TestimonialSlider />
-        <LatestPostsSection posts={props.posts} />
+        {/* <AboutSection /> */}
+        {/* <CountersSection /> */}
+        {/* <ProjectsSlider projects={props.projects} /> */}
+        {/* <TeamSlider />
+        <FeaturesSection /> */}
+        {/* <PartnersSlider /> */}
+        {/* <RenovationSection />
+        <TestimonialSlider /> */}
+        {/* <LatestPostsSection posts={props.posts} /> */}
       </>
     </Layouts>
   );

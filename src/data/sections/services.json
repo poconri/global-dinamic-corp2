@@ -6,7 +6,7 @@
                 "dark": "/images/1-icon.png",
                 "alt": "icon"
             },
-            "title": "Core Planning",
+            "title": "Consumibles para Automóviles",
             "text": "Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.",
             "link": "/services/service-1"
         },
@@ -16,7 +16,7 @@
                 "dark": "/images/2-icon.png",
                 "alt": "icon"
             },
-            "title": "Traditional Designs",
+            "title": "Lubricantes para Automóviles",
             "text": "Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.",
             "link": "/services/service-2"
         },
@@ -26,7 +26,7 @@
                 "dark": "/images/3-icon.png",
                 "alt": "icon"
             },
-            "title": "Quality Materials",
+            "title": "Car Parts and Accessories",
             "text": "Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.",
             "link": "/services/service-3"
         }

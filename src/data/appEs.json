@@ -25,28 +25,7 @@
             {
                 "label": "About",
                 "link": "/about",
-                "children": [
-                    {
-                        "label": "About Company",
-                        "link": "/about",
-                        "children": 0
-                    },
-                    {
-                        "label": "Core Values",
-                        "link": "/core-values",
-                        "children": 0
-                    },
-                    {
-                        "label": "Leadership",
-                        "link": "/leadership",
-                        "children": 0
-                    },
-                    {
-                        "label": "History",
-                        "link": "/history",
-                        "children": 0
-                    }
-                ]
+                "children": []
             },
             {
                 "label": "Contact",
@@ -57,7 +36,7 @@
     },
     "footer": {
         "logo": {
-            "image": "/img/Builty-Logo.svg",
+            "image": "/img/2.-Global-Dynamic-Corp-Logo-Background.svg",
             "alt": "logo"
         },
         "info": {
@@ -84,7 +63,7 @@
     "sidebarMenu": {
         "subTitle": "¡Bienvenidos a Global Dynamic Corp!",
         "description": "Tu destino confiable para repuestos, consumibles y lubricantes de calidad para automóviles y maquinaria pesada.",
-        "image": "/img/project1.jpeg",
+        "image": "/img/crecei_home (1).jpg",
         "getInTouch": "Contactanos!",
         "phoneNumber": "+502 5595-7883",
         "address": "23 calle 14-58 zona 4 de Mixco, Condado Naranjo, Pent-House Edificio Crece Torre 1, Oficina 1104 (GT)"
