@@ -1,23 +1,32 @@
 import Head from 'next/head';
 import Link from "next/link";
 import { useLanguage } from '../stores/use-languaje';
-import appDataEs from "@data/appEs.json";
-import appDataEn from "@data/appEn.json";
+import {getData} from '../stores/getData';
 
 const PageBanner = ({ pageTitle, pageDesc }) => {
   const {isSpanish} = useLanguage();
+
+  const [data, setData] = useState(null);
+
+    
+
+  useEffect(() => {
+      getData('app').then((res) => {
+          setData(res)
+      })
+  }, [])
 
   const styles = {
     "parallax": {
       "backgroundImage": "url(/images/pattren-3.png)"
     }
   }
-  const headTitle = `${(isSpanish? appDataEs: appDataEn).settings.siteName} - ${pageTitle}`;
+  const headTitle = `${(isSpanish? data.es: data.en).settings.siteName} - ${pageTitle}`;
 
   return (
     <>
       <Head>
-        <title>{headTitle}</title>
+        <title>{data ??headTitle}</title>
       </Head>
       <section className="banner-style-one">
         <div className="parallax" style={styles.parallax} />
