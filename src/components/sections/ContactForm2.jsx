@@ -1,11 +1,11 @@
 import Data from "@data/sections/contact-form-2.json";
 import { useLanguage } from "@/src/stores/use-languaje";
-import appDataEs from "@data/appEs.json";
-import appDataEn from "@data/appEn.json";
+import { useAppData } from "@/src/stores/use-app-data";
 import { Formik } from 'formik';
 
 const ContactForm2Section = () => {
     const {isSpanish} = useLanguage();
+    const {data:appData} = useAppData();
 
   return (
     <div className="contact-form-one contact-form-two">
@@ -79,7 +79,8 @@ const ContactForm2Section = () => {
                         isSubmitting,
                         /* and other goodies */
                     }) => (
-                    <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish? appDataEs :appDataEn).settings.formspreeURL}>
+                        <>
+                    {appData ? <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish? appData.es :appData.en).settings.formspreeURL}>
                         <div className="row g-0">
                             <input 
                               type="text" 
@@ -150,7 +151,8 @@ const ContactForm2Section = () => {
                         </button>
 
                         <div className="form-status" id="contactFormStatus" />
-                    </form>
+                    </form>: null}
+                    </>
                     )}
                 </Formik>
               </div>

@@ -2,13 +2,15 @@ import Head from 'next/head';
 import Link from "next/link";
 import { useLanguage } from '../stores/use-languaje';
 import {getData} from '../stores/getData';
+import {useAppData} from '../stores/use-app-data';
 
 const PageBanner = ({ pageTitle, pageDesc }) => {
   const {isSpanish} = useLanguage();
-
-  const [data, setData] = useState(null);
-
-    
+  const {data, setData} = useAppData((
+    {data,
+    setData}
+  )=>({data,
+    setData}));
 
   useEffect(() => {
       getData('app').then((res) => {

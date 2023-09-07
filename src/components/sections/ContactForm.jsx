@@ -1,11 +1,11 @@
 import Data from "@data/sections/contact-form.json";
 import Accordion from 'react-bootstrap/Accordion';
-import appDataEs from "@data/appEs.json";
-import appDataEn from "@data/appEn.json";
 import { Formik } from 'formik';
+import { useAppData } from "@/src/stores/use-app-data";
 
 const ContactFormSection = () => {
     const {isSpanish} = useLanguage();
+    const {data} = useAppData();
 
   const styles = {
     parallax: {
@@ -25,7 +25,7 @@ const ContactFormSection = () => {
         <div className="container">
         <div className="row align-items-center">
             <div className="col-lg-6" >
-                <div className="acc2">
+               {data ? <div className="acc2">
                     <Accordion defaultActiveKey="contact-acc-0" alwaysOpen>
                         {Data.items.map((item, key) => (
                         <Accordion.Item key={`contact-item-${key}`} eventKey={`contact-acc-${key}`}>
@@ -38,7 +38,7 @@ const ContactFormSection = () => {
                         </Accordion.Item>
                         ))}
                     </Accordion>
-                </div>
+                </div> : null}
             </div>
             <div className="col-lg-6" >
                 <div className="c-form-2">
@@ -104,7 +104,8 @@ const ContactFormSection = () => {
                         isSubmitting,
                         /* and other goodies */
                     }) => (
-                    <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish? appDataEs: appDataEn).settings.formspreeURL}>
+                        <>
+                    {data ? <form onSubmit={handleSubmit} id="contactForm" action={(isSpanish? data.es: data.en).settings.formspreeURL}>
                         <div className="row g-0">
                             <input 
                               type="text" 
@@ -175,7 +176,8 @@ const ContactFormSection = () => {
                         </button>
 
                         <div className="form-status" id="contactFormStatus" />
-                    </form>
+                    </form> : null}
+                    </>
                     )}
                     </Formik>
                 </div>

@@ -1,15 +1,16 @@
 import Link from "next/link";
 import { useLanguage } from "@/src/stores/use-languaje";
-import appDataEs from "@data/appEs.json";
-import appDataEn from "@data/appEn.json";
+import { useAppData } from "@/src/stores/use-app-data";
 
 const DefaultFooter = () => {
     const {isSpanish} = useLanguage();
+    const {data} = useAppData();
 
-    const appDataLanguage = isSpanish ? appDataEs : appDataEn;
+    const appDataLanguage = data ? (isSpanish ? data.es : data.en) : {}
 
   return (
-    <footer className="footer-style-one">
+    <>
+    {data ?<footer className="footer-style-one">
         <div className="footer-p-1">
         <div className="container">
             <div className="row">
@@ -84,7 +85,8 @@ const DefaultFooter = () => {
             </div>
         </div>
         </div>
-    </footer>
+    </footer> : null}
+    </>
   );
 };
 export default DefaultFooter;

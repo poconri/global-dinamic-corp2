@@ -1,14 +1,14 @@
-import appDataEs from "@data/appEs.json";
-import appDataEn from "@data/appEn.json";
 import { useLanguage } from "../stores/use-languaje";
+import { useAppData } from "@/src/stores/use-app-data";
 
 const Preloader = () => {
   const {isSpanish} = useLanguage();
+  const {data} = useAppData();  
 
   return (
     <div className="preloader"> 
         <figure>
-            <img src={(isSpanish ? appDataEs : appDataEn).settings.preloader.image} alt={(isSpanish ? appDataEs : appDataEn).settings.preloader.alt} /> 
+            {data ? <img src={(isSpanish ? data.en : data.es).settings.preloader.image} alt={(isSpanish ? data.es : data.en).settings.preloader.alt} />  : null}
         </figure>
     </div>
   );
