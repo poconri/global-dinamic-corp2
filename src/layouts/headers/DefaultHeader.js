@@ -1,20 +1,35 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import { useState } from "react";
-import appDataEs from "@data/appEs.json";
-import appDataEn from "@data/appEn.json";
 import { useLocalStorage } from "@common/useLocalStorage";
 import { useLanguage } from "@/src/stores/use-languaje";
+import {useAppData} from '../../stores/use-app-data';
+import {getData} from '../../stores/getData'
+import Image from 'next/image';
+import logo from '../../../public/img/logo_transparent.png';
 
 const DefaultHeader = ({ contactButton, cartButton }) => {
 	const { isSpanish, setLanguage } = useLanguage(
 		({ isSpanish, setLanguage }) => ({ isSpanish, setLanguage })
 	);
 
-  const appDataLanguage = isSpanish ? appDataEs : appDataEn;
+	const {data, setData} = useAppData((
+		{data,
+		setData}
+	  )=>({data,
+		setData}));
+	
+	  useEffect(() => {
+		  getData('app').then((res) => {
+			  setData(res)
+		  })
+	  }, [])
+
+  const appDataLanguage = (isSpanish ? data?.es : data?.en) || {};
 
 	const navItems = [];
 
-	appDataLanguage.header.menu.forEach((item) => {
+	appDataLanguage.header?.menu.forEach((item) => {
 		let s_class1 = "";
 
 		if (item.children != 0) {
@@ -64,10 +79,14 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 	};
 
 	return (
+		<>
+		{data ? 
 		<header className="header-style-one">
 			<div className="container">
 				<div className="row">
-					<div className="desktop-nav" id="stickyHeader">
+					<div className="desktop-nav" id="stickyHeader" style={{
+						padding: 0,
+					}}>
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-12">
@@ -75,14 +94,10 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 										<div className="header-logo">
 											<Link href="/">
 												<figure>
-													{/* <img src={appData.header.logo.image} alt={appData.header.logo.alt} /> */}
-													<span
-														style={{
-															color: "white",
-														}}
-													>
-														Global Dinamic Corp
-													</span>
+													<Image
+														width={200}
+														height={100}
+													src={logo} alt='logo' />
 												</figure>
 											</Link>
 										</div>
@@ -318,10 +333,10 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 					<div className="mobile-nav mobile-menu" id="mobile-nav">
 						<div className="res-log">
 							<Link href="/">
-								<img
-									src={appDataLanguage.header.logo.image}
-									alt={appDataLanguage.header.logo.alt}
-								/>
+							<Image
+								width={120}
+								height={70}
+								src={logo} alt='logo' />
 							</Link>
 						</div>
 
@@ -403,6 +418,9 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 				</div>
 			</div>
 		</header>
+		: null
+		}
+		</>
 	);
 };
 export default DefaultHeader;

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import Link from "next/link";
 import { useLanguage } from '../stores/use-languaje';
@@ -23,7 +24,7 @@ const PageBanner = ({ pageTitle, pageDesc }) => {
       "backgroundImage": "url(/images/pattren-3.png)"
     }
   }
-  const headTitle = `${(isSpanish? data.es: data.en).settings.siteName} - ${pageTitle}`;
+  const headTitle = `${(isSpanish? data?.es: data?.en)?.settings?.siteName} - ${pageTitle}`;
 
   return (
     <>

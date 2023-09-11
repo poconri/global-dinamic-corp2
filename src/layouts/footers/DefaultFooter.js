@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useLanguage } from "@/src/stores/use-languaje";
 import { useAppData } from "@/src/stores/use-app-data";
+import Image from 'next/image';
+import logo from '../../../public/img/logo_transparent.png';
 
 const DefaultFooter = () => {
     const {isSpanish} = useLanguage();
@@ -11,13 +13,18 @@ const DefaultFooter = () => {
   return (
     <>
     {data ?<footer className="footer-style-one">
-        <div className="footer-p-1">
+        <div className="footer-p-1" style={{
+            padding: '32px 0',
+        }}>
         <div className="container">
             <div className="row">
             <div className="footer-first">
                 <div className="footer-logo">
                     <Link href="/">
-                        <img src={appDataLanguage.footer.logo.image} alt={appDataLanguage.footer.logo.alt} />
+                    <Image
+						width={200}
+						height={100}
+					    src={logo} alt='logo' />
                     </Link>
                 </div>
                 <div className="contact-info d-flex-all">
