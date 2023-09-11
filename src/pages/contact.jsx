@@ -224,7 +224,7 @@ const Contact = () => {
         {/* Contact Form 2 End */}
 
         {/* Contact Faqs Start */}
-        <section className="contact-faqs">
+        {/* <section className="contact-faqs">
             <div className="heading">
                 <figure>
                     <img src="/images/heading-icon.png" alt="Heading Icon" />
@@ -252,12 +252,13 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* Contact Faqs End */}
 
         {/* Contact Map Start */}
         <div className="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14143117.941545919!2d60.32337114882688!3d30.068124090484673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db52d2f8fd751f%3A0x46b7a1f7e614925c!2sPakistan!5e0!3m2!1sen!2s!4v1655124094484!5m2!1sen!2s" width="600" height="760" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405.74403347019364!2d-90.53976254672679!3d14.649759527230593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1e431ca7e75%3A0x3846375c7a8621a6!2sCrece!5e0!3m2!1sen!2sgt!4v1694404459933!5m2!1sen!2sgt" width="
+            450" height="500" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         {/* Contact Map End */}
       
