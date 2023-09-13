@@ -9,30 +9,30 @@ import { Formik } from 'formik';
 const Contact = () => {
     const {isSpanish} = useLanguage();
 
-  const faqData = {
-    "items": [
-        {
-            "title": "Occupational Health Risk Management?",
-            "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
-        },
-        {
-            "title": "What is commercial management in construction?",
-            "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
-        },
-        {
-            "title": "Start a construction management?",
-            "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
-        },
-        {
-            "title": "Measure quality in construction projects?",
-            "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
-        },
-        {
-            "title": "Prepare a construction project schedule?",
-            "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
-        }
-    ]
-  }
+//   const faqData = {
+//     "items": [
+//         {
+//             "title": "Occupational Health Risk Management?",
+//             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
+//         },
+//         {
+//             "title": "What is commercial management in construction?",
+//             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
+//         },
+//         {
+//             "title": "Start a construction management?",
+//             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
+//         },
+//         {
+//             "title": "Measure quality in construction projects?",
+//             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
+//         },
+//         {
+//             "title": "Prepare a construction project schedule?",
+//             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
+//         }
+//     ]
+//   }
 
   return (
     <Layouts>
