@@ -9,7 +9,7 @@ description0:
   enabled: 1
   text1: "
     <h3>Service Details</h3>
-    <p>We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly master new technologies. Our portfolio includes <span>dozens of successfully</span> completed projects of houses of different storeys, with high–quality finishes and good repairs. Building houses is our vocation!</p>
+    <p>This  is a test </p>
   "
   text2: "
     <h3>Service Benefits</h3>
@@ -25,7 +25,7 @@ description0:
 gallery: 
   enabled: 1
   items:
-      - image: /img/gallery-3.jpeg
+      - image: /img/Image 8.jpeg
         alt: "image"
 
       - image: /img/gallery-2.jpeg
@@ -76,4 +76,3 @@ accordion:
 Our knowledgeable cost management experts understand the importance of delivering a project to meet your expectations in terms of cost, time, and quality. We will work with you to find the right, flexible and valuable solutions. No matter what sector you operate in, or the **scale of your project**, our team have the experience and know-how to support you with your goals.
 
 In addition to construction consultancy services **Bureau Veritas is a global leader in testing**, inspection and certification (TIC) and we have more than 190+ years of experience meaning that we also can assist you in other areas of your business if needed.
-                  

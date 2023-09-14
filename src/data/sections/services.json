@@ -2,32 +2,33 @@
     "items": [
         {
             "icon": {
-                "light": "/images/icon-1.svg",
-                "dark": "/images/1-icon.png",
+                "light": "/images/coche.png",
+                "dark": "/images/coche.png",
                 "alt": "icon"
             },
             "title": "Consumibles para Automóviles",
-            "text": "Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.",
+            "text": "",
             "link": "/services/service-1"
         },
         {
             "icon": {
-                "light": "/images/icon-2.svg",
-                "dark": "/images/2-icon.png",
+                "light": "/images/excavador.png",
+                "dark": "/images/excavador.png",
                 "alt": "icon"
             },
-            "title": "Lubricantes para Automóviles",
-            "text": "Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.",
+            "title": "Maquinaria Pesada",
+            "text": "",
             "link": "/services/service-2"
-        },
+        }
+        ,
         {
             "icon": {
-                "light": "/images/icon-3.svg",
-                "dark": "/images/3-icon.png",
+                "light": "/images/rueda-de-repuesto.png",
+                "dark": "/images/rueda-de-repuesto.png",
                 "alt": "icon"
             },
             "title": "Car Parts and Accessories",
-            "text": "Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.",
+            "text": "",
             "link": "/services/service-3"
         }
     ]
