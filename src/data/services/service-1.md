@@ -18,20 +18,20 @@ description0:
 gallery: 
   enabled: 1
   items:
-      - image: /img/Image 8.jpeg
+      - image: /img/Image 16.jpg
         alt: "image"
 
-      - image: /img/gallery-2.jpeg
+      - image: /img/Image 12.jpg
         alt: "image"
 
-      - image: /img/gallery-1.jpeg
+      - image: /img/Image 15.jpg
         alt: "image"
 
-      - image: /img/gallery-4.jpeg
+      - image: /img/Image 17.jpg
         alt: "image"
 
-      - image: /img/gallery-5.jpeg
-        alt: "image"          
+      - image: 
+        alt: ""          
 
 checklist:
   enabled: 1
