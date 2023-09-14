@@ -24,14 +24,14 @@ gallery:
       - image: /img/image_7.jpg
         alt: "image"
 
-      - image: /img/image 13.jpg
+      - image: /img/Image 5.jpg
         alt: "image"
 
-      - image: /img/gallery-4.jpeg
+      - image: /img/Image 6.jpg
         alt: "image"
 
-      - image: /img/gallery-5.jpeg
-        alt: "image"          
+      - image: 
+        alt: ""          
 
 checklist:
   enabled: 1

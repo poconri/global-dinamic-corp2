@@ -13,7 +13,7 @@ const Contact = () => {
 //     "items": [
 //         {
 //             "title": "Occupational Health Risk Management?",
-//             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
+//s             "text": "Commercial management in construction ensures the planning, execution, and coordination of a construction project from the start to finish. These are often for specific projects such as building or renovation projects that are sold or leased."
 //         },
 //         {
 //             "title": "What is commercial management in construction?",
@@ -170,7 +170,7 @@ const Contact = () => {
                             <img className="author" src="/img/PabloCEO.jpeg" alt="Bio Image" />
                         </figure>
                         <h3>Pablo Recinos</h3>
-                        <p>CEO Global Dynamic CORP</p>
+                        <p>Chief Financial Officer <br />Global Dynamic CORP</p>
                         <figure>
                             <img src="/img/signature.png" alt="Signature Image" />
                         </figure>
