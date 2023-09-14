@@ -12,13 +12,7 @@ description0:
     <p>Bienvenido a nuestra sección de repuestos y accesorios para maquinaria pesada. Sabemos lo crucial que es mantener tus equipos en funcionamiento, por lo que ofrecemos una amplia gama de piezas y componentes de alta resistencia. Desde elementos de desgaste hasta componentes mecánicos, tenemos lo necesario para mantener tus máquinas trabajando de manera eficiente y segura. Nuestros repuestos están diseñados para soportar las condiciones más exigentes y prolongar la vida útil de tu maquinaria. Explora nuestra selección y confía en nosotros para mantener tu negocio en movimiento</p>
   "
   text2: "
-    <h3>Servicios</h3>
-    <ul>
-      <li>Consumibles para Maquinaria Pesada</li>
-      <li>Lubricantes para Maquinaria Pesada</li>
-      <li>Repuestos y Accesorios para Maquinaria Pesada</li>
-      <li>Realistic pricing and project timescales</li>
-    </ul>
+
   "
 
 gallery: 
@@ -43,12 +37,12 @@ checklist:
   enabled: 1
   title: What can we support with?
   items:
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
+    - Herramientas de corte
+    - Filtros
+    - Tren de Rodaje
+    - Piezas hidráulicas
+    - Tornillería
+    - Lubricantes y grasas
 
 accordion:
   enabled: 0
