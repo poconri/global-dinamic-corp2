@@ -51,7 +51,7 @@ checklist:
     - Dedication to client satisfaction
 
 accordion:
-  enabled: 1
+  enabled: 0
   title: Reporting and Cost Control
   items:
     - heading: Occupational Health Risk Management?

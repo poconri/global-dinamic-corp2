@@ -1,15 +1,15 @@
 ---
 #preview details
 image: "/img/serv-i-1.svg"
-title: "Construction"
-short: "Designing and Building The Most Beautiful Custom Homes."
+title: "Automoviles"
+short: "Sección de automoviles"
 
 #full details
 description0:
   enabled: 1
   text1: "
     <h3>Service Details</h3>
-    <p>This  is a test </p>
+    <p>Bienvenido a nuestra sección de repuestos y accesorios para automóviles. Aquí, encontrarás una amplia gama de piezas de alta calidad para mantener tu vehículo en perfecto estado. Desde frenos hasta filtros, desde correas hasta faros, tenemos todo lo que necesitas para garantizar un rendimiento óptimo y la seguridad de tu automóvil. Nuestro compromiso es ofrecerte productos confiables que se ajusten perfectamente a las especificaciones de tu vehículo, sin importar la marca o el modelo. Explora nuestra selección y confía en nosotros para mantener tu automóvil en la mejor forma posible</p>
   "
   text2: "
     <h3>Service Benefits</h3>
@@ -44,15 +44,15 @@ checklist:
   enabled: 1
   title: What can we support with?
   items:
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
-    - Dedication to client satisfaction
+    - Test possible services
+    - Test possible services
+    - Test possible services
+    - Test possible services
+    - Test possible services
+    - Test possible services
 
 accordion:
-  enabled: 1
+  enabled: 0
   title: Reporting and Cost Control
   items:
     - heading: Occupational Health Risk Management?
