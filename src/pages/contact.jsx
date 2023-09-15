@@ -170,7 +170,7 @@ const Contact = () => {
                             <img className="author" src="/img/PabloCEO.jpeg" alt="Bio Image" />
                         </figure>
                         <h3>Pablo Recinos</h3>
-                        <p>Chief Financial Officer <br />Global Dynamic CORP</p>
+                        <p>CCO <br />Global Dynamic CORP</p>
                         <figure>
                             <img src="/img/signature.png" alt="Signature Image" />
                         </figure>
