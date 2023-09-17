@@ -282,7 +282,7 @@ const DefaultHeader = ({ contactButton, cartButton }) => {
 												)}
 												{contactButton != 1 && (
 													<a href="tel:+50255957883" className="theme-btn">
-														+502 55957883
+														+502 2215-7376
 														<i>
 															<svg
 																xmlns="http://www.w3.org/2000/svg"
