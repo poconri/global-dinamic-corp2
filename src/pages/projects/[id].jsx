@@ -2,7 +2,15 @@ import Layouts from "@layouts/Layouts";
 import PageBanner from "@components/PageBanner";
 import Link from "next/link";
 import { sliderProps } from "@common/sliderProps";
-import { Swiper, SwiperSlide } from "swiper/react";
+import dynamic from 'next/dynamic';
+
+const DynamicSwiper = dynamic(() => import('swiper/react'), {
+  ssr: false,
+});
+
+const DynamicSwiperSlide = dynamic(() => import('swiper/react'), {
+  ssr: false,
+});
 
 import { getSortedProjectsData, getAllProjectsIds, getProjectData, getRelatedProjects } from "@library/projects";
 
@@ -112,19 +120,19 @@ const ProjectDetail = ( props ) => {
           {/* Project Detail Slider Start */}
           <div className="gap no-top project-detail-slider">
             <div className="container-fluid g-0">
-              <Swiper
+              <DynamicSwiper
                 {...sliderProps.projDetailsSlider}
                 className="p-d-slider"
               >
                 {postData.slider.items.map((item, key) => (
-                <SwiperSlide key={`pds-slide-${key}`} className="swiper-slide">
+                <DynamicSwiperSlide key={`pds-slide-${key}`} className="swiper-slide">
                 <figure>
                   <img src={item.image} alt={item.alt} />
                 </figure>
-                </SwiperSlide>
+                </DynamicSwiperSlide>
                 ))}
                 <div className="swiper-pagination" />
-              </Swiper>
+              </DynamicSwiper>
             </div>
           </div>
           {/* Project Detail Slider Start */}
