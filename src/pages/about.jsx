@@ -1,16 +1,30 @@
+import { useEffect } from "react";
 import dynamic from "next/dynamic";
-
+import { useLanguage } from '../stores/use-languaje';
+import {getData} from '../stores/getData';
 import Layouts from "@layouts/Layouts";
-
 import PageBanner from "@components/PageBanner";
-import CountersSection from "@components/sections/Counters";
-import RenovationSection from "@components/sections/Renovation";
+import {useAppData} from '../stores/use-app-data';
+// import CountersSection from "@components/sections/Counters";
+// import RenovationSection from "@components/sections/Renovation";
 
-const TeamSlider = dynamic( () => import("@components/sliders/Team"), { ssr: false } );
-const PartnersSlider = dynamic( () => import("@components/sliders/Partners"), { ssr: false } );
+// const TeamSlider = dynamic( () => import("@components/sliders/Team"), { ssr: false } );
+// const PartnersSlider = dynamic( () => import("@components/sliders/Partners"), { ssr: false } );
 const TestimonialSlider = dynamic( () => import("@components/sliders/Testimonial"), { ssr: false } );
 
 const About = () => {
+  const {isSpanish} = useLanguage();
+
+  const {about, setAbout} = useAppData((
+		{about, setAbout}
+	  )=>({about, setAbout}));
+	
+	  useEffect(() => {
+		  getData('about').then((res) => {
+			  setAbout(res)
+		  })
+	  }, [])
+  console.log(about,'data')
   return (
     <Layouts>
       <PageBanner pageTitle={"About Us"} pageDesc={"our values and vaulted us to the top of our industry."} />

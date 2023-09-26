@@ -1,5 +1,13 @@
-import { sliderProps } from "@common/sliderProps";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { sliderProps } from '../../common/sliderProps.js';
+import dynamic from 'next/dynamic';
+
+const DynamicSwiper = dynamic(() => import('swiper/react'), {
+    ssr: false,
+  });
+
+const DynamicSwiperSlide = dynamic(() => import('swiper/react'), {
+    ssr: false,
+})
 
 import Data from '@data/sliders/certificates';
 
@@ -31,12 +39,12 @@ const CertificatesSlider = () => {
                     <span>{Data.subheading}</span>
                     <h2>{Data.heading}</h2>
                 </div>
-                <Swiper
-                    {...sliderProps.certificatesSlider}
+                <DynamicSwiper
+                    {...sliderProps?.certificatesSlider}
                     className="swiper-container c-slider"
                 >
                     {Data.items.map((item, key) => (
-                    <SwiperSlide key={`cs-slide-${key}`} className="swiper-slide">
+                    <DynamicSwiperSlide key={`cs-slide-${key}`} className="swiper-slide">
                     <div className="c-main">
                         <div className="c-first">
                             <figure>
@@ -49,14 +57,14 @@ const CertificatesSlider = () => {
                             <p>{item.text}</p>
                         </div>
                     </div>
-                    </SwiperSlide>
+                    </DynamicSwiperSlide>
                     ))}
 
                     <div className="swiper-nav">
                         <button className="swiper-nav-prev"><i className="fa-solid fa-arrow-left" /></button>
                         <button className="swiper-nav-next"><i className="fa-solid fa-arrow-right" /></button>
                     </div>
-                </Swiper>
+                </DynamicSwiper>
             </div>
         </div>
         </div>
