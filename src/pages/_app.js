@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { Analytics } from '@vercel/analytics/react';
 import appDataEs from "@data/appEs.json";
 import appDataEn from "@data/appEn.json";
 import { useLanguage } from "../stores/use-languaje";
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }) {
           {/* seo end */}        
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }

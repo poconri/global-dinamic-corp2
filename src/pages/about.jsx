@@ -24,16 +24,22 @@ const About = () => {
 			  setAbout(res)
 		  })
 	  }, [])
+<<<<<<< HEAD
   console.log(about,'data')
+=======
+
+    const appAboutLanguage = about ? (isSpanish ? about.es : about.en) : {};
+
+>>>>>>> d9ccc2e351114ee306c3da0331d41924fcfcc8b9
   return (
     <Layouts>
-      <PageBanner pageTitle={"About Us"} pageDesc={"our values and vaulted us to the top of our industry."} />
+      <PageBanner pageTitle={ appAboutLanguage?.title } pageDesc={appAboutLanguage?.description} />
       
       {/* About-First Start */}
       <section className="gap about-first">
         <div className="container">
           <div className="row">
-            <h2>Global Dynamic Corp</h2>
+            <h2>{appAboutLanguage?.title}</h2>
           </div>
         </div>
         <div className="container">
@@ -41,32 +47,28 @@ const About = () => {
             <div className="col-lg-6">
               <div className="who-we-are">
                 <div>
-                  <h3>Who We Are?</h3>
-                  <p>Global Dynamic Corp is a company dedicated to the importation, marketing, and distribution of spare parts, lubricants, and consumables for cars and heavy machinery. Our goal is to provide high-quality products and exceptional service to customers worldwide. With an extensive network of suppliers and a solid marketing strategy, we aim to become industry leaders, meeting our customers' needs and generating sustainable and profitable growth for our shareholders.
-                  Additionally, we will offer exceptional customer service, providing technical advice and customized solutions to meet our customers' specific needs.
-                  </p>
+                  <h3>{appAboutLanguage?.whoWeAre?.title}</h3>
+                  <p>{appAboutLanguage?.whoWeAre?.content}</p>
                 </div>
                 <figure>
-                  <h3>Mision</h3>
-                  <p>To provide high-quality spare parts, lubricants, and consumables for cars and heavy machinery, ensuring customer satisfaction through exceptional service and global distribution.</p>
+                  <h3>{appAboutLanguage?.mision?.title}</h3>
+                  <p>{appAboutLanguage?.mision?.content}</p>
                 </figure>
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="who-we-are space">
                 <div>
-                  <h3>Our Values</h3>
+                  <h3>{appAboutLanguage?.values?.title}</h3>
                   <ul>
-                    <li><i className="fa-solid fa-circle-dot" /> Integrity: We conduct our business with honesty, transparency, and ethical principles.</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Excellence: We strive for excellence in all aspects of our operations to deliver top-notch products and services.</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Customer-Centric: We prioritize our customers' needs, providing personalized solutions and exceptional support</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Innovation: We embrace innovation and continuous improvement to stay ahead in a dynamic industry.</li>
-                    <li><i className="fa-solid fa-circle-dot" /> Collaboration: We foster a collaborative and diverse work environment, valuing each team member's contributions.</li>
+                    {(appAboutLanguage?.values?.content?? []).map(value => (
+                      <li><i className="fa-solid fa-circle-dot" />{value}</li>
+                    ))}
                   </ul>
                 </div>
                 <figure>
-                  <h3>Vision</h3>
-                  <p>To be a leading global company in the automotive and heavy machinery spare parts industry, recognized for our commitment to quality, innovation, and customer-centric approach.</p>
+                  <h3>{appAboutLanguage?.vision?.title}</h3>
+                  <p>{appAboutLanguage?.vision?.content}</p>
                 </figure>
               </div>
             </div>

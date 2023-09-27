@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "2.33.1",
+    "@vercel/analytics": "1.0.2",
     "date-fns": "2.30.0",
     "formik": "2.4.2",
     "gray-matter": "4.0.3",

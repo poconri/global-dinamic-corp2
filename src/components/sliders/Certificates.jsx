@@ -1,13 +1,13 @@
 import { sliderProps } from '../../common/sliderProps.js';
 import dynamic from 'next/dynamic';
 
-const DynamicSwiper = dynamic(() => import('swiper/react'), {
+const DynamicSwiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
     ssr: false,
   });
-
-const DynamicSwiperSlide = dynamic(() => import('swiper/react'), {
+  
+  const DynamicSwiperSlide = dynamic(() => import("swiper/react").then((mod) => mod.SwiperSlide), {
     ssr: false,
-})
+  });
 
 import Data from '@data/sliders/certificates';
 
