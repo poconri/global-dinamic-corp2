@@ -38,7 +38,9 @@ const TestimonialSlider = () => {
             </div>
             <div className="col-lg-6" >
                 <figure>
-                    <img src={Data.image.url} alt={Data.image.alt} />
+                    <img style={{
+                        width: '100%',
+                    }} src={Data.image.url} alt={Data.image.alt} />
                 </figure>
             </div>
         </div>

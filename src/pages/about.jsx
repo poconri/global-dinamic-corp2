@@ -24,13 +24,9 @@ const About = () => {
 			  setAbout(res)
 		  })
 	  }, [])
-<<<<<<< HEAD
-  console.log(about,'data')
-=======
 
     const appAboutLanguage = about ? (isSpanish ? about.es : about.en) : {};
 
->>>>>>> d9ccc2e351114ee306c3da0331d41924fcfcc8b9
   return (
     <Layouts>
       <PageBanner pageTitle={ appAboutLanguage?.title } pageDesc={appAboutLanguage?.description} />
