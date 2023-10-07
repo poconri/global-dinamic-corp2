@@ -18,7 +18,9 @@ const DefaultFooter = () => {
         }}>
         <div className="container">
             <div className="row">
-            <div className="footer-first">
+            <div className="footer-first" style={{
+                alignItems: 'center',
+            }}>
                 <div className="footer-logo">
                     <Link href="/">
                     <Image
