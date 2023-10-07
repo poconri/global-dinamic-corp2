@@ -3,12 +3,13 @@
 image: "/img/serv-i-1.svg"
 title: "Automoviles"
 short: "Sección de automoviles"
+pageDescription: "Descubre nuestra amplia gama de repuestos y accesorios de alta calidad para automóviles. Desde frenos hasta filtros, garantizamos el rendimiento y la seguridad de tu vehículo. ¡Explora y confía en nuestra selección!"
 
 #full details
 description0:
   enabled: 1
   text1: "
-    <h3>Service Details</h3>
+    <h3>Detalles del servicio</h3>
     <p>Bienvenido a nuestra sección de repuestos y accesorios para automóviles. Aquí, encontrarás una amplia gama de piezas de alta calidad para mantener tu vehículo en perfecto estado. Desde frenos hasta filtros, desde correas hasta faros, tenemos todo lo que necesitas para garantizar un rendimiento óptimo y la seguridad de tu automóvil. Nuestro compromiso es ofrecerte productos confiables que se ajusten perfectamente a las especificaciones de tu vehículo, sin importar la marca o el modelo. Explora nuestra selección y confía en nosotros para mantener tu automóvil en la mejor forma posible</p>
   "
   text2: "

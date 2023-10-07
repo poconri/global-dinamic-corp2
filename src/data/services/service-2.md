@@ -3,6 +3,8 @@
 image: "img/serv-i-2.svg"
 title: "Maquinaria Pesada"
 short: ""
+pageDescription: "Ofrecemos repuestos y accesorios de alta resistencia para maquinaria pesada. Desde herramientas de corte hasta lubricantes, mantenemos tus equipos en óptimo funcionamiento. ¡Garantizamos eficiencia y seguridad en cada pieza! Explora y mantén tu negocio en movimiento."
+
 
 #full details
 description0:
@@ -35,7 +37,7 @@ gallery:
 
 checklist:
   enabled: 1
-  title: What can we support with?
+  title: ¿Con qué podemos apoyar?
   items:
     - Herramientas de corte
     - Filtros
