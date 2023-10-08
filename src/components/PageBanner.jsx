@@ -49,7 +49,7 @@ const PageBanner = ({ pageTitle, pageDesc }) => {
                 <li>
                   <Link href="/">
                     <i className="fa-solid fa-house"></i>
-                    <p>Home</p>
+                    <p>{isSpanish ? 'Inicio' :'Home'}</p>
                   </Link>
                 </li>
                 <li className="current">
