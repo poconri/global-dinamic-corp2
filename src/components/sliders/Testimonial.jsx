@@ -1,23 +1,40 @@
+import { useEffect } from "react";
 import { sliderProps } from "@common/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import Data from '@data/sliders/testimonial';
+import { useLanguage } from '../../stores/use-languaje';
+import {useAppData} from '../../stores/use-app-data';
+import {getData} from '../../stores/getData';
 
 const TestimonialSlider = () => {
+
+    const {isSpanish} = useLanguage();
+
+  const {about, setAbout} = useAppData((
+		{about, setAbout}
+	  )=>({about, setAbout}));
+	
+	  useEffect(() => {
+		  getData('about').then((res) => {
+			  setAbout(res)
+		  })
+	  }, [])
+
+    const appAboutLanguage = about ? (isSpanish ? about.es : about.en) : {};
+
   return (
     <section className="gap client-review-style-one">
         <div className="container">
         <div className="row align-items-center">
             <div className="col-lg-6" >
                 <div className="head-review">
-                    <span>{Data.subtitle}</span>
-                    <h3>{Data.title}</h3>
+                    <span>{appAboutLanguage?.testimonial?.subtitle}</span>
+                    <h3>{appAboutLanguage?.testimonial?.title}</h3>
                 </div>
                 <Swiper
                     {...sliderProps.testimonialSlider}
                     className="swiper-container client-review-slider"
                 >
-                {Data.items.map((item, key) => (
+                {appAboutLanguage?.testimonial?.items.map((item, key) => (
                 <SwiperSlide key={`tts-slide-${key}`} className="swiper-slide">
                     <div className="slider-data">
                         <p>{item.text}</p>
@@ -40,7 +57,7 @@ const TestimonialSlider = () => {
                 <figure>
                     <img style={{
                         width: '100%',
-                    }} src={Data.image.url} alt={Data.image.alt} />
+                    }} src={appAboutLanguage?.testimonial?.image.url} alt={appAboutLanguage?.testimonial?.image.alt} />
                 </figure>
             </div>
         </div>
