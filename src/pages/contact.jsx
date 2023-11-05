@@ -156,8 +156,8 @@ const Contact = () => {
                         <figure>
                             <img className="author" src="/img/PabloCEO.jpeg" alt="Bio Image" />
                         </figure>
-                        <h3>Pablo Recinos</h3>
-                        <p>CCO <br />Global Dynamic CORP</p>
+                        <h3>Andres S.</h3>
+                        <p>CCO <br />Global Dynamic Corp</p>
                         <figure>
                             <img src="/img/signature.png" alt="Signature Image" />
                         </figure>
@@ -176,8 +176,7 @@ const Contact = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="40" height="62" viewBox="0 0 40 62"> <defs> <clipPath id="fsddffsdfsdfsdf"> <rect width="40" height="62"/> </clipPath> </defs> <g id="Mobsfddfsdile" clipPath="url(#fsddffsdfsdfsdf)"> <path id="Pafdth_1dfhgfhgjjdfhgddffgdfgdfgdfgdfgd" data-name="Path 1" d="M10,6a4,4,0,0,0-4,4V50a4,4,0,0,0,4,4H28a4,4,0,0,0,4-4V10a4,4,0,0,0-4-4H10m0-6H28A10,10,0,0,1,38,10V50A10,10,0,0,1,28,60H10A10,10,0,0,1,0,50V10A10,10,0,0,1,10,0Z" transform="translate(1 1)"/> <path id="Padfth_2" data-name="Path 2" d="M2.5,0h7a2.5,2.5,0,0,1,0,5h-7a2.5,2.5,0,0,1,0-5Z" transform="translate(14 48)"/> </g></svg>
                             <div>
                                 <h3>{appAboutLanguage?.contact?.telephone}</h3>
-                                <p>Tel:   (+502) 5595-7883</p>
-                                <p>Fax:  (+502) 2215-7376</p>
+                                <p>Tel:   (+502) 2215-7376</p>
                             </div>
                         </li>
                         <li>
